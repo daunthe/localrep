@@ -1,0 +1,7 @@
+
+#!/bin/bash
+ssh ny4-fixapp03-adm << EOF
+sudo -iu fixapp
+cd scripts
+bash getSchonMem-prod.sh
+EOF

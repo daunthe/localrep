@@ -1,0 +1,3 @@
+open sftp://dante.sebastian:Dandan15mar%21@jmplon01.ms.orcsoftware.com/ -hostkey="ssh-ed25519 255 s+/inMn054K0v1ie0se6hSjVkcYBoBLeVFurHOWNK5k="
+ls %ticketnum%
+exit
