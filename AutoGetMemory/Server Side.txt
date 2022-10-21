@@ -1,1 +1,1 @@
-pgrep -f java.SCHON  xargs binjstat -gc tail -1 awk '{split($0,a, ); sum=a[3]+a[4]+a[6]+a[8]; div=sum(10241024); print div  GB}'
+pgrep -f "java.*SCHON" | xargs /bin/jstat -gc| tail -1 |awk '{split($0,a," "); sum=a[3]+a[4]+a[6]+a[8]; div=sum/(1024*1024); print div " GB"}'
